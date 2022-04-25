@@ -22,7 +22,7 @@ body{
   display: flex;
   max-height: 100vh;
   height: 100vh;
-  background-image: url(../assets/images/background.jpg);
+  background-image: url(../assets/images/background.JPG);
   background-size: 100vw;
   color: var(--primary-text);
 }
