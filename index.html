@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Revisão front-end</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="transparency">
+    <header>
+      <h1>IF Sudeste MG - <span id="current-system">SIGAA</span></h1>
+      <span>v. 2.0.1</span>
+    </header>
+    <main id="main"> 
+      <div class="login">
+        <h2>Entrar no sistema</h2>
+        <form action="" class="form">
+          <label class="input-fields" for="user">
+            <i class="fa-solid fa-user"></i>
+            <input id="user" type="text" placeholder="Usuário"/>
+          </label>
+          <label class="input-fields" for="password">
+            <i class="fa-solid fa-key"></i>
+            <input id="password" type="text" placeholder="Senha"/>
+          </label>
+          <label class="input-fields" for="system">
+            <p><i class="fa-solid fa-folder-tree"></i></p>
+            <select name="system" id="system">
+                <option value="sigaa">SIGAA</option>
+                <option value="sipac">SIPAC</option>
+                <option value="sigrh">SIGRH</option>
+                <option value="sigpp">SIGPP</option>
+                <option value="siged">SIGED</option>
+                <option value="sigadmin">SIGADMIN</option>
+            </select>
+          </label>
+
+          <div class="keep-connected">
+            <label for="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <span>manter conectado</span> 
+            </label>
+          </div>
+        
+          <input type="submit" value="entrar  ">
+
+        </form>
+
+        <div class="alternative-options">
+          <p><i class="fa-solid fa-user-plus"></i>  Novo aqui? <a href="pages/cadastro.html">Cadastro</a></p>
+          <p><i class="fa-solid fa-triangle-exclamation"></i>  Problemas? <a href="pages/suporte.html">Suporte</a></p>
+        </div>
+        
+        
+      </div>
+    </main>
+    <footer id="contact">
+      <span>IF Sudeste MG - Barbacena</span>
+      <span>Telefone - (32) 3333-2810</span>
+    </footer>
+  </div>
+    <script src="javascript/index.js"></script>
+  <script src="https://kit.fontawesome.com/0fbc6dd58c.js" crossorigin="anonymous"></script>
+</body>
+</html>
