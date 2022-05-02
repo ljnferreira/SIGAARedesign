@@ -91,6 +91,7 @@ header h1 + span{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 
   background-color: #ffffffde;
   backdrop-filter: blur(5px);
@@ -113,7 +114,6 @@ header h1 + span{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 40vw;
   width: 40vw;
   min-height: 55vh;
   background-color: #ffffffde;
@@ -122,18 +122,12 @@ header h1 + span{
   border: solid 1px var(--divider-color);
 }
 
-.login, .logo{
+.login{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 75%;
   padding: 1rem;
-}
-
-.logo{
-  text-transform: capitalize; 
-  justify-content: space-between;
-  min-height: 20rem;
 }
 
 .form{
@@ -302,4 +296,45 @@ input[type=submit]{
 #contact span:first-child{
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  #main{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header{
+    justify-content: center;
+  }
+
+  header h1{
+    font-size: 1.5rem;
+  }
+
+  header h1 + span{
+    display: none;
+  }
+  .warnings{
+    width: 100%;
+  }
+  #main{
+    width: 100%;
+    padding: none;
+  }
+  .login{
+    width:100%;
+  }
+
+  #contact{
+    flex-direction: column;
+  }
+
 }
