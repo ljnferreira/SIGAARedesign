@@ -37,6 +37,7 @@ const setTheme = () => {
   }
   document.body.dataset.theme = theme;
   toggle.title = message
+  console.log(message)
 }
 
 input.onchange = setTheme;
