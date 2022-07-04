@@ -36,7 +36,7 @@ const setTheme = () => {
     message = "Mudar para tema escuro"
   }
   document.body.dataset.theme = theme;
-  tooggle.title = message
+  toggle.title = message
 }
 
 input.onchange = setTheme;
