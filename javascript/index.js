@@ -3,9 +3,11 @@ const select = document.querySelector("#system");
 const password = document.querySelector('#password');
 const warnings = document.querySelector('.warnings');
 const message = document.querySelector('#message');
-const input= document.querySelector('#input');
+const input = document.querySelector('#input');
+const toggle = document.querySelector('#theme-toggler');  
 
 let theme = "light"
+let message = "Mudar para tema escuro"
 
 password.addEventListener('keyup', function (e) {
   if (e.getModifierState('CapsLock')) {
@@ -28,7 +30,13 @@ const setTheme = () => {
   }else{
     theme = "light";
   }
+  if(message == "Mudar para tema escuro"){
+    message = "Mudar para tema claro";
+  }else{
+    message = "Mudar para tema escuro"
+  }
   document.body.dataset.theme = theme;
+  tooggle.title = message
 }
 
 input.onchange = setTheme;
